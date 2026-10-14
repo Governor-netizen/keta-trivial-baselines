@@ -1,6 +1,9 @@
 # Trivial baselines catch label leakage that cross-validation misses
 
-Code and derived data for:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23379976.svg)](https://doi.org/10.5281/zenodo.23379976)
+
+Code and derived data for the paper below. The version used for the paper is
+archived on Zenodo as v1.0: https://doi.org/10.5281/zenodo.23379977.
 
 > Jerry Etornam Kudaya. *Trivial baselines catch label leakage that cross-validation
 > misses: a flood-mapping case study on a data-scarce West African coast.*

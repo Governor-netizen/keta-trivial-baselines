@@ -6,6 +6,7 @@ authors:
     given-names: Jerry Etornam
     email: jerryetornamkudaya@gmail.com
 license: MIT
+doi: 10.5281/zenodo.23379976
 repository-code: "https://github.com/Governor-netizen/keta-trivial-baselines"
 preferred-citation:
   type: conference-paper
