@@ -1,0 +1,116 @@
+{
+  "created_utc": "2026-08-07T03:23:20+00:00",
+  "source_data": "keta_samples_v4_2_all_splits.csv",
+  "n_train": 6470,
+  "n_validation": 5823,
+  "feature_order": [
+    "elevation",
+    "slope",
+    "aspect",
+    "dist_water",
+    "lt3",
+    "lt1",
+    "lt0",
+    "imerg_24h",
+    "imerg_peak_intensity",
+    "imerg_3d",
+    "chirps_7d",
+    "chirps_30d",
+    "solar_rad",
+    "u_wind_10m",
+    "v_wind_10m",
+    "wind_speed",
+    "wind_dir",
+    "surface_pressure",
+    "onshore_wind",
+    "soil_moisture",
+    "tide_max_fes",
+    "tide_range_fes",
+    "spring_flag_fes",
+    "tide_anomaly",
+    "freeboard_fes",
+    "compound_risk",
+    "season_wet",
+    "rain_intensity_ratio"
+  ],
+  "terrain_features": [
+    "elevation",
+    "slope",
+    "aspect",
+    "dist_water",
+    "lt3",
+    "lt1",
+    "lt0"
+  ],
+  "dynamic_features": [
+    "imerg_24h",
+    "imerg_peak_intensity",
+    "imerg_3d",
+    "chirps_7d",
+    "chirps_30d",
+    "solar_rad",
+    "u_wind_10m",
+    "v_wind_10m",
+    "wind_speed",
+    "wind_dir",
+    "surface_pressure",
+    "onshore_wind",
+    "soil_moisture",
+    "tide_max_fes",
+    "tide_range_fes",
+    "spring_flag_fes",
+    "tide_anomaly",
+    "freeboard_fes",
+    "compound_risk",
+    "season_wet",
+    "rain_intensity_ratio"
+  ],
+  "hyperparameters": {
+    "n_estimators": 300,
+    "max_depth": 6,
+    "learning_rate": 0.1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "class_weighting": "inverse-frequency sample_weight",
+    "seed": 42
+  },
+  "calibration": {
+    "isotonic": "5-fold out-of-fold; used for probability quality (Brier)",
+    "platt": "5-fold out-of-fold; used for the graded alert tiers"
+  },
+  "metrics": {
+    "val_accuracy": 0.8093766099948481,
+    "val_kappa": 0.38285216363092645,
+    "val_balanced_acc": 0.7018237990831173,
+    "val_roc_auc": 0.8734452356935913,
+    "brier_raw": 0.12157535552978516,
+    "brier_isotonic": 0.09835148903554364,
+    "brier_climatology": 0.14731487696951884,
+    "brier_platt": 0.11927865459553633,
+    "brier_skill_score": 0.33237232342872125
+  },
+  "alert_tiers": [
+    {
+      "tier": "ADVISORY",
+      "threshold": 0.2,
+      "area_flagged": 0.25193199381761977,
+      "recall": 0.6570327552986512,
+      "precision": 0.4648943421949557
+    },
+    {
+      "tier": "WATCH",
+      "threshold": 0.3,
+      "area_flagged": 0.19371458011334364,
+      "recall": 0.5115606936416185,
+      "precision": 0.47074468085106386
+    },
+    {
+      "tier": "WARNING",
+      "threshold": 0.45,
+      "area_flagged": 0.12141507813841662,
+      "recall": 0.31695568400770713,
+      "precision": 0.46534653465346537
+    }
+  ],
+  "n_terrain_pixels": 621
+}

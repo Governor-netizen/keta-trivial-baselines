@@ -1,0 +1,33 @@
+section,model,r2,lo,hi,note
+A0,predict the mean,0.0,,,
+A0,OLS on distance to water,0.13210019134982687,,,
+A0,"linear, all features",0.21674402011313576,,,
+A0,"XGBoost unconstrained, all features",0.4514244034810586,,,
+A0,"XGBoost monotone, all features",0.48722338793391173,,,
+A,OLS on elevation,0.09976346924121293,,,
+A,"isotonic on elevation (one feature, no ML)",0.4865710146357888,,,
+A,isotonic on distance to water,0.31435925161520173,,,
+A,"XGBoost monotone, elevation only",0.4851215625462081,,,
+A,"XGBoost monotone, all features minus distance",0.4836822588638727,,,(sbHb ablation)
+A,"XGBoost monotone, elevation + distance",0.46358137484726114,,,
+A-diff,full - isotonic on elevation,0.0006523732981229546,-0.0205492787736301,0.023309205663203145,
+A-diff,"full - XGBoost monotone, elevation only",0.0021018253877036486,-0.020566465559281107,0.027097156959700844,
+A-diff,"full - XGBoost monotone, minus distance",0.0035411290700390063,-0.01878049564003148,0.027902073484509515,
+A-seeds,"XGBoost monotone, all features",0.4860156637366197,0.4847442849659982,0.48722338793391173,(range over seeds)
+A-seeds,"XGBoost monotone, elevation only",0.484732894051316,0.4842448147051015,0.4851215625462081,(range over seeds)
+A-seeds,"XGBoost monotone, minus distance",0.48320933612849065,0.4828055821292637,0.4836822588638727,(range over seeds)
+B,"NASADEM (whole metres): monotone, all features",0.3103897561808818,,,
+B,NASADEM (whole metres): isotonic on elevation,0.11750174663008406,,,
+B,"GLO-30: monotone, all features",0.48722338793391173,,,
+B,GLO-30: isotonic on elevation,0.4865710146357888,,,
+B,"GLO-30 rounded to whole metres: monotone, all features",0.44016360333763815,,,
+B,GLO-30 rounded to whole metres: isotonic on elevation,0.4145291799498114,,,
+B,"GLO-30 rounded, bin edges shifted 0.25 m: monotone, all features",0.4751214306922166,,,
+B,"GLO-30 rounded, bin edges shifted 0.25 m: isotonic on elevation",0.47806486215432864,,,
+B,"GLO-30 rounded, bin edges shifted 0.50 m: monotone, all features",0.4603413082030854,,,
+B,"GLO-30 rounded, bin edges shifted 0.50 m: isotonic on elevation",0.4648370118528834,,,
+B,"GLO-30 rounded, bin edges shifted 0.75 m: monotone, all features",0.37735610801949226,,,
+B,"GLO-30 rounded, bin edges shifted 0.75 m: isotonic on elevation",0.31191768405026443,,,
+B-diff,GLO-30  minus  NASADEM (whole metres),0.1768336317530299,0.11391520657611373,0.22824852134478635,
+B-diff,GLO-30  minus  GLO-30 rounded to whole metres,0.04705978459627358,0.021110128966195445,0.07566497265556175,
+B-diff,GLO-30 rounded to whole metres  minus  NASADEM (whole metres),0.12977384715675633,0.06746902782578489,0.18114199923675978,

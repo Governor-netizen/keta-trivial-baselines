@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper."
+title: "Trivial baselines catch label leakage that cross-validation misses: a flood-mapping case study on a data-scarce West African coast (code and data)"
+authors:
+  - family-names: Kudaya
+    given-names: Jerry Etornam
+    email: jerryetornamkudaya@gmail.com
+license: MIT
+repository-code: "https://github.com/Governor-netizen/keta-trivial-baselines"
+preferred-citation:
+  type: conference-paper
+  title: "Trivial baselines catch label leakage that cross-validation misses: a flood-mapping case study on a data-scarce West African coast"
+  authors:
+    - family-names: Kudaya
+      given-names: Jerry Etornam
+  collection-title: "Tackling Climate Change with Machine Learning workshop at NeurIPS 2026"
+  year: 2026

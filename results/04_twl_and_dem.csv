@@ -1,0 +1,12 @@
+quantity,value,paper
+land cells,693376.0,"693,376"
+median Sentinel-1 observations per cell,503.0,503
+"Pearson r, inundation frequency vs JRC occurrence",0.7545945565533017,0.755
+TWL minimum (m),-0.6402410798188307,
+TWL maximum (m),3.341814028152541,
+TWL range (m),3.9820551079713717,3.98
+"Iribarren number, 1st percentile",0.4853457608326858,0.49
+"Iribarren number, 99th percentile",1.7268973263944112,1.73
+"Iribarren number, minimum",0.36109563058872685,0.36
+"NASADEM: distinct elevations in [-0.64, 3.34] m",4.0,four
+"GLO-30: distinct elevations in [-0.64, 3.34] m",316207.0,"316,207"

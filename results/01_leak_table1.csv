@@ -1,0 +1,32 @@
+quantity,value,paper
+share of rows with dist_water > 0,0.60741885625966,61%
+rows with dist_water > 0 and flood = 1 (exceptions),0.0,0
+dist_water share of gain importance,0.8259511723944521,83% (XGBoost default importance)
+  next feature's share of gain,0.022294307981059792,
+dist_water share of total_gain importance,0.4685615656977455,47%
+  next feature's share of total_gain,0.14850683491019973,
+28-feature model: accuracy,0.8093766099948481,0.809
+28-feature model: kappa,0.38285216363092645,0.383
+28-feature model: ROC-AUC,0.8734452356935913,0.873
+one-line rule dist_water <= 0: accuracy,0.7856774858320453,0.786
+one-line rule: kappa,0.5025909799892074,0.503
+one-line rule: ROC-AUC,0.8695924764890282,0.870
+model/rule agreement,0.8104070066975786,81%
+land only: accuracy,0.5144356955380578,0.514
+land only: kappa,0.03190583452367879,0.032
+land only: ROC-AUC,0.5147719974309569,0.515
+land only: always 'not flooded' accuracy,0.5459317585301837,0.546
+land only: share of samples flagged (p >= 0.5),0.5170603674540682,52%
+land only: precision of flagged samples,0.46954314720812185,47%
+land only: base rate,0.4540682414698163,45%
+land only: recall,0.5346820809248555,
+test 2023: kappa,0.3893593868708506,0.389
+validation 2024-2026: kappa,0.38285216363092645,0.383
+logistic regression: ROC-AUC,0.8442742151432604,
+random forest: ROC-AUC,0.8644694906006447,
+"gradient boosting (XGBoost, as reported): ROC-AUC",0.8734452356935913,
+LightGBM: ROC-AUC,0.8610119532981801,
+spread across families,0.02917102055033094,0.03 (0.84-0.87)
+"Brier, isotonic",0.09835148903554364,
+"Brier, climatology",0.14648249055536045,
+Brier skill score,0.3285785306990432,0.33
